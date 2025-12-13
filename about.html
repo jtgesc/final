@@ -1,27 +1,98 @@
+<!--here isw where i will make my about page, which will include the basic knowledge of myself as well as making it
+so i can show people my woprk experience and yeha-->
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>About — YOUR NAME</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css">
-</head><body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">YOUR NAME</a>
-  </div>
-</nav>
-<main class="container py-5">
-  <h1>About Me</h1>
-  <p>Write a concise bio that highlights your strengths, interests, and goals.</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — James Gescheidle</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-  <h2>Work / Internship Experience</h2>
-  <article>
-    <h3>Role — Company</h3>
-    <p>Short description of responsibilities and accomplishments.</p>
-  </article>
+<body>
 
-  <h2>Education</h2>
-  <p>School — Degree — Dates</p>
-</main>
-<footer class="bg-dark text-white py-3 text-center">© YEAR YOUR NAME</footer>
-</body></html>
+  <!-- Navigation bar that will be reused across pages -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">James Gescheidle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects/index.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- the maain About Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Here is where i will add a better profile pictrure of myself that way u can really see what i look like
+         I dont have any professional headshots of my self so i found a picture and cropped it thjat way it is just me -->
+        <div class="col-md-4 text-center">
+          <img src="assets/IMG_6997.png" class="img-fluid rounded-circle shadow" alt="Profile photo">
+        </div>
+
+        <!-- About me text just. breif overveiw of like everythiong i guess -->
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>
+            <ul>
+                <li>
+                    I am a finance major at St. Lawrence University, and before coming to SLU
+             I graduated from Highland High School which is also located in New York. I have played football for as long as I can remember, 
+             and the sport ended up shaping a huge part of who I am. Today, I am proud to continue that passion as a D3 
+             football player at St. Lawrence. Off the field, I am grounded by my family, which is including both of my parents, my sister and our two dogs. 
+             They all have always supported me in everything I do. Whether it is athletics, academics, or even just personal growth, 
+             I am driven by commitment, teamwork, and the mindset of always pushing to be better than I was yesterday.
+                </li>
+            </ul>
+            
+          </p>
+            <!-- here is where i will wriote. a bit more abvout the eduactation of myself-->
+          <h4>Education</h4>
+          <ul>
+            <li>
+                I attended Highland High School in New York, where I built a strong academic 
+                foundation and developed the discipline that has ended up carrying into my college career today. 
+                I am currently a student at St. Lawrence University, pursuing a major in Finance as part 
+                of the Class of 2028. My coursework has strengthened my analytical and quantitative skills that i will need later in life, 
+                while also allowing me to explore all of the real-world applications in business and financial markets. 
+                Through both academics and athletics, I am constantly working to grow as a student, teammate, 
+                and future professional in whatever comes next.
+            </li>
+          </ul>
+            <!--now i will write about my work experience and all that good stuff-->
+          <h4>Experience</h4>
+          <ul>
+            <li>
+                I have built a strong and diverse work background through several hands-on and service-oriented roles. 
+                I have worked for two landscaping companies, those being Angelone and Sons and Bakers and Sons, here is 
+                where I handled a variety of manual labor tasks such as mulching, weed wacking, and maintaining 
+                outdoor properties. These jobs taught me the value of hard work, consistency, and reliability. I also 
+                currently work as a caterer for Sugar and Spice, gaining experience in customer service, teamwork, and 
+                fast-paced event environments. In addition, I completed a shadowing experience at Fidelity with Jim Dunn, a 
+                financial consultant, which gave me meaningful exposure to the finance industry and reinforced my interest in 
+                pursuing a career in that field.
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
