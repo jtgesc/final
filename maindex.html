@@ -1,0 +1,138 @@
+<!-- Okay so this will be the prject for my final in web design so, gonna give it my best shot i guess -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James Gescheidle — Portfolio</title>
+
+  <!-- Bootstrap styling, this website comes from the Bootstrap CSS framework, 
+     The CSS file is loaded from a network hosted bysome person named jsDelivr -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <!-- Styling for this page, i will need to add in the height as well as how the backround will look for this part 
+   I am going to make it so its the semi transparent backround as well-->
+  <style>
+    .hero {
+      height: 90vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+
+        /*making a picture as the backround */
+        url('assets/IMG_6766.jpeg') center/cover no-repeat;
+
+        /* found a way to make a cool animation for when you firat open the page*/
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    
+
+    /*  fadening-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* more styling lmao.  didnt like how it looked so going to add more to the transistioni and add some shadowing under some thingsn */
+    .skill-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+<!-- connnect to my styles-->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- making the sort of navvigatioin bar at the top for the reason of being able to get to all the pages
+   I will create a couple pages, still thinkiin, ill prolly think of and do those tommorrow, been working on this for too long 
+   lol -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">James Gescheidle</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects/index.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- more stylingggggg.    yep. going to make it so you see my name in the beginning asw ell as 3 words that describe me.  -->
+  <header class="hero d-flex align-items-center">
+    <div class="container text-center text-light">
+      <h1 class="display-3 fw-bold">Hi, I'm James Gescheidle</h1>
+      <p class="lead mb-4">Athlete • Student • Friend</p>
+      <!-- making the learn more page which i will have it just direct to the about me page.-->
+      <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </header>
+
+  <!-- SKILLS SECTION, this is where i will incorporate 3 main skills on the front of my home page
+    so that everyone cann see this right when they open the page -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+
+      <div class="row g-4">
+
+        <!-- Skill 1, iwll make this about how i can now design a website -->
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm skill-card">
+            <h4 class="mb-2">Web Design & Development</h4>
+            <p>
+              I build responsive, clean, and user-friendly websites using HTML, CSS, and Bootstrap.
+              My design approach focuses on accessibility, usability, and strong layout structure.
+            </p>
+          </div>
+        </div>
+
+        <!-- This will be my 2nd skill, I will make it finance related -->
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm skill-card">
+            <h4 class="mb-2">Analytical & Data Skills</h4>
+            <p>
+              My finance coursework has trained me in data analysis, statistics, and interpreting trends. 
+              I also hold a Bloomberg Certificate, which strengthens my financial and analytical abilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill 3 this is the one where i will make it about some of my work experience -->
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm skill-card">
+            <h4 class="mb-2">Work Ethic/Problem Solving</h4>
+            <p>
+              My background in landscaping and hands-on labor has really shaped my reliability, discipline, 
+              as well as my ability to handle challenging tasks. I take pride in quality work and practical solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- here is where i wqill make the footer of my page that way it wikll always be there so people see something at the bottom of the page -->
+  <footer class="py-3 bg-dark text-light text-center">
+    <!-- Went to another page to find how their footers looked to find how to make the bottom look professional-->
+    <p>© 2025 James Gescheidle — All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
